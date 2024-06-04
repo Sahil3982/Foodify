@@ -5,9 +5,9 @@ import Navbar from '../Components/Navbar'
 const Main = () => {
     return (
         <>
-            <Navbar>H</Navbar>
+            <Navbar />
             <Outlet />
-            <footer></footer>
+            <footer></footer>kkkk
         </>
     )
 }
