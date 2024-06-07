@@ -1,6 +1,9 @@
 import React from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { IoSearchOutline } from "react-icons/io5";
+import { LuShoppingCart } from "react-icons/lu";
+
 
 const Navbar = () => {
   return (
@@ -59,7 +62,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link>
-          <img src="logo.png" className="cursor-pointer" />
+            <img src="logo.png" className="cursor-pointer" />
 
           </Link>
         </div>
@@ -99,7 +102,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end flex space-around gap-4 ">
+          <IoSearchOutline size={22} />
+          <LuShoppingCart  size={25} />
           <a className="btn bg-green rounded-full px-6 text-white flex"><FiPhoneCall />
             Contact</a>
         </div>
