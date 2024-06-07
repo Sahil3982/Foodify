@@ -7,7 +7,6 @@ const Main = () => {
         <>
             <Navbar />
             <Outlet />
-            <footer>Heleo</footer>
         </>
     )
 }
