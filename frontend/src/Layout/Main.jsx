@@ -7,7 +7,7 @@ const Main = () => {
         <>
             <Navbar />
             <Outlet />
-            <footer></footer>kkkk
+            <footer>Heleo</footer>
         </>
     )
 }
