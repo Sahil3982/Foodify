@@ -1,4 +1,7 @@
 import React from "react";
+import { FiPhoneCall } from "react-icons/fi";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <header className="max-w-screen-2xl container mx-auto">
@@ -23,10 +26,10 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className=" text-green menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a className="grren">Home</a>
+                <a>Home</a>
               </li>
               <li>
                 <a>Menu</a>
@@ -55,12 +58,15 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <img src="logo.png" />
+          <Link>
+          <img src="logo.png" className="cursor-pointer" />
+
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a className="green text-red-200">Home</a>
+              <a className="text-green"><Link to='/'>Home</Link></a>
             </li>
             <li>
               <details>
@@ -76,7 +82,7 @@ const Navbar = () => {
               </details>
             </li>
             <li>
-              <details className="green">
+              <details >
                 <summary>Services</summary>
                 <ul className="p-2">
                   <li>
@@ -94,7 +100,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-green">Button</a>
+          <a className="btn bg-green rounded-full px-6 text-white flex"><FiPhoneCall />
+            Contact</a>
         </div>
       </div>
     </header>
