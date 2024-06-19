@@ -29,10 +29,10 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className=" text-green menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+                <a className="text-green">Home</a>
               </li>
               <li>
                 <a>Menu</a>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <a>Offers</a>
+                <a className="text-green">Offers</a>
               </li>
             </ul>
           </div>
@@ -114,9 +114,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end flex space-around gap-4 ">
-          <IoSearchOutline size={22} />
-          <LuShoppingCart size={25} />
+        <div className="navbar-end flex space-around gap-4  ">
+          <IoSearchOutline size={22}  className="hidden lg:flex"/>
+          <LuShoppingCart size={25} className="hidden lg:flex" />
           <a className="btn bg-green rounded-full px-6 text-white flex"><FiPhoneCall />
             Contact</a>
         </div>
