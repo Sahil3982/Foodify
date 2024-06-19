@@ -38,10 +38,13 @@ const Navbar = () => {
                 <a>Menu</a>
                 <ul className="p-2">
                   <li>
-                    <a>Menu</a>
+                    <a>All</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>Salad</a>
+                  </li>
+                  <li>
+                    <a>Pizza</a>
                   </li>
                 </ul>
               </li>
@@ -49,10 +52,13 @@ const Navbar = () => {
                 <a>Service</a>
                 <ul className="p-2">
                   <li>
-                    <a>Menu</a>
+                    <a>Online Order</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>Table Booking</a>
+                  </li>
+                  <li>
+                    <a>Order Tracking</a>
                   </li>
                 </ul>
               </li>
@@ -76,10 +82,13 @@ const Navbar = () => {
                 <summary>Menu</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <a>All</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>Salad</a>
+                  </li>
+                  <li>
+                    <a>Pizza</a>
                   </li>
                 </ul>
               </details>
@@ -89,22 +98,25 @@ const Navbar = () => {
                 <summary>Services</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <a>Online Order</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>Table Booking</a>
+                  </li>
+                  <li>
+                    <a>Order Tracking</a>
                   </li>
                 </ul>
               </details>
             </li>
             <li>
-              <a>Offers</a>
+              <a className="text-green">Offers</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end flex space-around gap-4 ">
           <IoSearchOutline size={22} />
-          <LuShoppingCart  size={25} />
+          <LuShoppingCart size={25} />
           <a className="btn bg-green rounded-full px-6 text-white flex"><FiPhoneCall />
             Contact</a>
         </div>
